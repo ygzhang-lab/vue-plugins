@@ -1,0 +1,14 @@
+packages:
+  - 'packages/*'
+  - 'templates/*'
+  - 'playground/*'
+
+# pnpm 10+ 只允许这里列出的依赖执行安装脚本（package.json 的 pnpm 字段已不再读取）。
+# pnpm 12 起字段名为 allowBuilds，取值为 true / false。
+allowBuilds:
+  esbuild: true
+
+minimumReleaseAgeExclude:
+  - '@vitest/mocker@5.1.0'
+  - '@vitest/spy@5.1.0'
+  - vitest@5.1.0
