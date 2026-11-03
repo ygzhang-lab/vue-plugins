@@ -1,0 +1,34 @@
+{
+  "name": "@ygzhang-lab/vue-plugins",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.0.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel --filter \"./playground/*\" run dev",
+    "dev:http": "pnpm --filter playground-http dev",
+    "dev:event": "pnpm --filter playground-event dev",
+    "build": "pnpm -r --filter \"./packages/*\" --filter \"./templates/*\" run build",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "changeset": "changeset",
+    "changeset:status": "changeset status --verbose",
+    "version-packages": "changeset version",
+    "release": "pnpm build && pnpm test && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^3.0.3",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "@vue/test-utils": "^2.5.1",
+    "jsdom": "^30.1.3",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.7",
+    "vitest": "^5.1.0",
+    "vue": "^3.5.44",
+    "vue-tsc": "^3.3.14"
+  }
+}

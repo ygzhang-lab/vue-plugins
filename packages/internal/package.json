@@ -1,0 +1,16 @@
+{
+  "name": "@ygzhang-lab/internal",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "插件包之间的私有共享代码，不发布到 npm",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3"
+  }
+}
