@@ -1,0 +1,23 @@
+{
+  "name": "playground-event",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "@ygzhang-lab/vue-event 独立测试应用（组件间通信 + 自动清理 + 错误隔离）",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@ygzhang-lab/vue-event": "workspace:*",
+    "vue": "^3.5.44"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.10",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.7",
+    "vue-tsc": "^3.3.14"
+  }
+}

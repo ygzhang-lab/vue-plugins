@@ -1,0 +1,26 @@
+{
+  "name": "playground-http",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "@ygzhang-lab/vue-http 独立测试应用：Vant 4 界面 + mock 后端，覆盖登录、刷新、恢复、同步与插件自测",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@ygzhang-lab/vue-http": "workspace:*",
+    "axios": "^1.21.0",
+    "pinia": "^4.1.0",
+    "vant": "^4.10.2",
+    "vue": "^3.5.44"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.10",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.7",
+    "vue-tsc": "^3.3.14"
+  }
+}
