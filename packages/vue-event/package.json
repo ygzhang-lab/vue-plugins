@@ -1,0 +1,48 @@
+{
+  "name": "@ygzhang-lab/vue-event",
+  "version": "0.1.0",
+  "description": "Vue 3 事件总线插件：零依赖、类型安全的事件表、组件卸载自动清理、多 App / SSR 隔离",
+  "keywords": [
+    "vue",
+    "vue3",
+    "plugin",
+    "event",
+    "event-bus",
+    "emitter",
+    "ygzhang-lab"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "vite build && vue-tsc -p tsconfig.build.json",
+    "typecheck": "vue-tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "vite": "^7.3.7",
+    "vue": "^3.5.44",
+    "vue-tsc": "^3.3.14"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
